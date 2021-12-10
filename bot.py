@@ -134,12 +134,6 @@ async def addFooter(str):
    ━━━━━━━━━━━━━━━
   ⚙️ How to Download / Watch Online :""" + HOWTO
     
-
     return str + footer
-    footer = """
-
    
-
-
-     
 bot.run()
