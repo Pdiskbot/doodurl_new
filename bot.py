@@ -27,7 +27,7 @@ bot = Client('Droplink bot',
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        "I'm pdiskshortforyou bot. Just send me link and get short link made by @mrpunisher52")
+        "I'm pdiskshortforyou bot. Just send me link and get short link made by @mrpunisher52 and @hornyworld22")
 
 @bot.on_message(filters.command('help') & filters.private)
 async def start(bot, message):
@@ -89,7 +89,7 @@ async def multi_pdisk_up(ml_string):
     ml_string = ' \n'.join(list_string)
     new_ml_string = list(map(str, ml_string.split(" ")))
     new_ml_string = [sub.replace('https://t.me/Desi_Bhabhi_Aunty_hot_Video/41', 'https://t.me/Desi_Bhabhi_Aunty_hot_Video/61') for sub in new_ml_string]
-    #new_ml_string = await remove_footer(new_ml_string)
+    new_ml_string = await remove_footer(new_ml_string)
     new_join_str = "".join(new_ml_string)
 
     urls = re.findall(r'(https?://[^\s]+)', new_join_str)
@@ -131,12 +131,13 @@ async def remove_username(new_List):
 async def addFooter(str):
     footer = """
     
-⭐️JOIN CHANNEL ➡️ t.me/""" + CHANNEL
+   ━━━━━━━━━━━━━━━
+  ⚙️ How to Download / Watch Online :""" + HOWTO
+    
+
     return str + footer
     footer = """
-   ━━━━━━━━━━━━━━━
-⚙️ How to Download / Watch Online :""" + HOWTO
-    
+
    
 
 
